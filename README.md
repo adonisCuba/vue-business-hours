@@ -13,7 +13,7 @@ Vue component for setting business hours in an administration panel. Option to u
 Install with NPM
 
 ```bash
-npm install vue-business-hours
+npm install vue-business-hours-adonis
 ```
 
 Then in your `main.js` or other entry point register as a plugin.
@@ -289,7 +289,7 @@ Example usage in `App.vue`:
   export default {
     data() {
       return {
-        days: yourDaysObject,
+        days: yourDaysObject
       };
     },
     methods: {
