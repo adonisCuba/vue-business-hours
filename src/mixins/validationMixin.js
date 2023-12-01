@@ -88,8 +88,8 @@ export const validationMixin = {
       this.updateAdjacentValidations(index, whichTime, inputNum);
     },
     runInputValidation: function(value, index, inputNum, totalInputs) {
-      const prevTime = this.getPrevious(this.hours, index, inputNum);
-      const nextTime = this.getNext(this.hours, index, inputNum, totalInputs);
+      // const prevTime = this.getPrevious(this.hours, index, inputNum);
+      // const nextTime = this.getNext(this.hours, index, inputNum, totalInputs);
       let validations = this.defaultValidation();
 
       validations.midnightNotLast =
@@ -97,18 +97,18 @@ export const validationMixin = {
           ? true
           : false;
 
-      if (prevTime === undefined) {
-        validations.greaterThanNext =
-          value >= nextTime && nextTime !== '' ? true : false;
-      } else if (nextTime === undefined) {
-        validations.lessThanPrevious =
-          value <= prevTime && prevTime !== '' ? true : false;
-      } else {
-        validations.lessThanPrevious =
-          value <= prevTime && prevTime !== '' ? true : false;
-        validations.greaterThanNext =
-          value >= nextTime && nextTime !== '' ? true : false;
-      }
+      // if (prevTime === undefined) {
+      //   validations.greaterThanNext =
+      //     value >= nextTime && nextTime !== '' ? true : false;
+      // } else if (nextTime === undefined) {
+      //   validations.lessThanPrevious =
+      //     value <= prevTime && prevTime !== '' ? true : false;
+      // } else {
+      //   validations.lessThanPrevious =
+      //     value <= prevTime && prevTime !== '' ? true : false;
+      //   validations.greaterThanNext =
+      //     value >= nextTime && nextTime !== '' ? true : false;
+      // }
 
       return validations;
     },

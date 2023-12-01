@@ -1,11 +1,11 @@
 {
-  "name": "vue-business-hours",
+  "name": "@adonisCuba/vue-business-hours",
   "description": "Vue component for selecting business hours.",
-  "version": "1.4.1",
-  "author": "sbarry50",
+  "version": "1.0.0",
+  "author": "adonisCuba",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sbarry50/vue-business-hours.git"
+    "url": "https://github.com/adonisCuba/vue-business-hours.git"
   },
   "license": "MIT",
   "private": false,

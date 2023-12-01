@@ -131,24 +131,24 @@ export const formFieldMixin = {
       return times;
     },
     getFiltered: function(when, adjacentTime, collection) {
-      if (
-        this.isLastInput(this.inputNum, this.totalInputs) &&
-        this.hours[this.index].open === ''
-      ) {
-        collection = collection.filter(value => value > adjacentTime);
-        collection.shift();
-        return collection;
-      }
+      // if (
+      //   this.isLastInput(this.inputNum, this.totalInputs) &&
+      //   this.hours[this.index].open === ''
+      // ) {
+      //   collection = collection.filter(value => value > adjacentTime);
+      //   collection.shift();
+      //   return collection;
+      // }
 
-      if (adjacentTime === '') {
-        return collection;
-      }
+      // if (adjacentTime === '') {
+      //   return collection;
+      // }
 
-      if (when === 'before') {
-        collection = collection.filter(value => value < adjacentTime);
-      } else if (when === 'after') {
-        collection = collection.filter(value => value > adjacentTime);
-      }
+      // if (when === 'before') {
+      //   collection = collection.filter(value => value < adjacentTime);
+      // } else if (when === 'after') {
+      //   collection = collection.filter(value => value > adjacentTime);
+      // }
 
       return collection;
     }
